@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary-dark: #1e1e1e;
+  --primary-light: #f5f5f5;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-[poppins]
+  }
+  a {
+    @apply no-underline text-inherit
+
+  }
+ 
+  li{
+    @apply p-4  text-sm
+  }
+  h2{
+    @apply text-2xl font-bold
+  }
+}
+
