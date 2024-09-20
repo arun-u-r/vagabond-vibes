@@ -3,7 +3,7 @@
 const HeroBlock = () => {
     return (
         <div className="w-full h-[90vh] ">
-            <img src="/src/assets/img/wp13100987-vagabond-pc-wallpapers.png" alt="/"
+            <img src="/assets/img/wp13100987-vagabond-pc-wallpapers.png" alt="/"
                 className="w-full h-full object-cover"
             />
             <div className="max-w-[1140px] m-auto">
