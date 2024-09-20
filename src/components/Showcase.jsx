@@ -13,10 +13,10 @@ const Showcase = () => {
           <CarouselGallery/>
         </div>
         <div className={`hover:scale-105 hover:blur-md `}>
-          <img className="w-full h-full rounded-2xl object-cover hover:scale-100" src='/assets/img/pexels-kyle-miller-15578965.jpg' alt='/'/>
+          <img className="w-full h-full rounded-2xl object-cover hover:scale-100" src='/assets/img/pexels-kamaji-ogino-5066802.jpg ' alt='/'/>
         </div>
         <div className="hover:scale-105"> 
-          <img  className="w-full h-full rounded-2xl object-cover"src='/assets/img/pexels-kamaji-ogino-5066802.jpg' alt='/'/>
+          <img  className="w-full h-full rounded-2xl object-cover"src='/assets/img/pexels-kyle-miller-15578965.jpg' alt='/'/>
         </div>
         <div className="hover:scale-105">
           <img className="w-full h-full rounded-2xl object-cover" src='/assets/img/pexels-ryutaro-tsukata-5472304.jpg' alt='/'/>
