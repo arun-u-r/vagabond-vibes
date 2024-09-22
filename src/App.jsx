@@ -2,11 +2,12 @@
 import Booking from './components/Booking'
 import CarouselGallery from './components/CarouselGallery'
 import Footer from './components/Footer'
+import Gallery from './components/Gallery'
 // import Gallery from './components/Gallery'
 import HeroBlock from './components/HeroBlock'
 import Navbar from './components/Navbar'
 import OtherActivity from './components/OtherActivity'
-import Showcase from './components/Showcase'
+import Showcases from './components/Showcases'
 import Topbar from './components/Topbar'
 
 function App() {
@@ -18,9 +19,8 @@ function App() {
       <HeroBlock/>
       <OtherActivity/>
       <Booking/>
-      <CarouselGallery/>
-      <Showcase/>
-      {/* <Gallery/> */}
+      <Gallery/>
+      <Showcases/>
       <Footer/>
     </>
   )

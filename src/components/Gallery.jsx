@@ -9,11 +9,11 @@ const Gallery = () => {
   useEffect(() => {
     const id = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex === gallery.images.length - 1 ? 0 : prevIndex + 1));
-    }, 3000); // Change slide every 3 seconds
+    }, 4000); // Change slide every 3 seconds
 
     // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(id);
-  }, [gallery.images]); // Dependency array to re-run the effect if images change
+  }, []); // Dependency array to re-run the effect if images change
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? gallery.images.length - 1 : prevIndex - 1));
@@ -24,7 +24,7 @@ const Gallery = () => {
   };
 
   return (
-    <div id="carouselDarkVariant" className="relative w-full p-" data-twe-carousel-init data-twe-ride="carousel ">
+    <div id="carouselDarkVariant" className="relative w-full mb-4" data-twe-carousel-init data-twe-ride="carousel ">
       <div className="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0" data-twe-carousel-indicators>
         {gallery.images.map((_, index) => (
           <button
@@ -53,10 +53,11 @@ const Gallery = () => {
             data-twe-carousel-item
             data-twe-carousel-active={index === activeIndex}
           >
-            <img src={image.src} className=" w-full h-full bg-cover" alt={image.label} />
-            <div className="absolute bottom-5 hidden py-5 text-center text-black md:block">
-              <h5 className="text-xl">{image.label}</h5>
-              <p>{image.description}</p>
+            <img src={image.src} className="w-full h-[500px] object-cover rounded-lg shadow-lg transition-transform 
+             duration-500 ease-in-out hover:scale-105" alt={image.label} />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-center text-white">
+              <h5 className="text-2xl font-bold text-[#ED9720] mb-5">{image.label}</h5>
+              <p className="text-lg mt-2">{image.description}</p>
             </div>
           </div>
         ))}

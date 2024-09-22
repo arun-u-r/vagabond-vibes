@@ -15,15 +15,15 @@ const OtherActivity = () => {
     <div className="max-w-[1140px] w-full m-auto mt-[-80px] md:flex justify-evenly z-30">
         <motion.div className="relative p-5 z-30" variants={iconVarient(2)} initial='initial' animate='animate' > 
             <h1 className="absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-2xl text-white font-bold">Other Activity</h1>
-            <img src="/assets/img/plane.jpg" alt="/" className="w-full h-full object-cover relative border-2 rounded-md shadow-lg"/>
+            <img src="plane.jpg" alt="" className="w-full h-full object-cover relative border-2 rounded-md shadow-lg"/>
         </motion.div>
         <motion.div className="relative p-5 z-30 "variants={iconVarient(1.5)} initial='initial' animate='animate' > 
             <h1 className="absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-2xl text-white font-bold">Other Activity</h1>
-            <img src="/assets/img/plane.jpg" alt="/" className="w-full h-full object-cover relative border-2 rounded-md shadow-lg"/>
+            <img src="space-wallpapers.jpg" alt="/" className="w-full h-full object-cover relative border-2 rounded-md shadow-lg"/>
         </motion.div>
         <motion.div className="relative p-5 z-30" variants={iconVarient(2)} initial='initial' animate='animate' > 
             <h1 className="absolute z-10 shadow-black top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-2xl text-white font-bold">Other Activity</h1>
-            <img src="/assets/img/plane.jpg" alt="/" className="w-full h-full object-cover relative border-2 rounded-md shadow-lg"/>
+            <img src="plane.jpg" alt="" className="w-full h-full object-cover relative border-2 rounded-md shadow-lg"/>
         </motion.div>
 
     </div>

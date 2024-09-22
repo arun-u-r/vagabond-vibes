@@ -20,7 +20,7 @@ const CarouselGallery = () => {
     }
 
   return (
-    <div className='max-w-[1140px]  w-full h-[650px] m-auto relative group'>
+    <div className='max-w-[1140px]  w-full h-[650px] m-auto relative group '>
         <div style={{backgroundImage: `url(${gallery.images[currentIndex].src})`}} 
         className=" w-full h-full bg-center rounded-2xl bg-cover duration-300 ">
         </div>
