@@ -1,5 +1,9 @@
 import React from 'react'
 import CarouselGallery from './CarouselGallery'
+import img1 from '../assets/img/pexels-ekaterina-bolovtsova-4672579.jpg';
+import img2 from '../assets/img/pexels-kyle-miller-15578965.jpg';
+import img3 from '../assets/img/pexels-ryutaro-tsukata-5472304.jpg';
+import img4 from '../assets/img/pexels-ekaterina-bolovtsova-4672579.jpg';
 
 const Showcases = () => {
   return (
@@ -11,16 +15,16 @@ const Showcases = () => {
           <CarouselGallery/>
         </div>
         <div className={`hover:scale-105 hover:scale-md `}>
-          <img className="w-full h-full rounded-2xl object-cover hover:scale-100" src='/src/assets/img/pexels-ekaterina-bolovtsova-4672579.jpg' alt='/'/>
+          <img className="w-full h-full rounded-2xl object-cover hover:scale-100" src={img1} alt='vagabond-vibes'/>
         </div>
         <div className="hover:scale-105"> 
-          <img  className="w-full h-full rounded-2xl object-cover"src='/src/assets/img/pexels-kyle-miller-15578965.jpg' alt='/'/>
+          <img  className="w-full h-full rounded-2xl object-cover"src={img2} alt='vagabond-vibes'/>
         </div>
         <div className="hover:scale-105">
-          <img className="w-full h-full rounded-2xl object-cover" src='/src/assets/img/pexels-ryutaro-tsukata-5472304.jpg' alt='/'/>
+          <img className="w-full h-full rounded-2xl object-cover" src={img3} alt='vagabond-vibes'/>
         </div>
         <div className="hover:scale-105">
-          <img className="w-full h-full rounded-2xl object-cover" src='/src/assets/img/pexels-ekaterina-bolovtsova-4672579.jpg' alt='/'/>
+          <img className="w-full h-full rounded-2xl object-cover" src={img4} alt='vagabond-vibes'/>
         </div>
       </div>
         
